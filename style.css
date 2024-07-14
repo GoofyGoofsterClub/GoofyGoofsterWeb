@@ -1,0 +1,68 @@
+@import url(https://fonts.bunny.net/css?family=albert-sans:300,400,500,600,700,800,900);
+
+/* The only readable file frfr */
+
+html,
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: white;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+main {
+    margin: 16px auto;
+    width: 65%;
+}
+
+img.logo {
+    height: 128px;
+    width: 128px;
+    user-select: none;
+}
+
+div.contributor-list {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+div.contributor {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.contributor>* {
+    pointer-events: none !important;
+    user-select: none;
+}
+
+div.contributor:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+div.contributor>p.title {
+    font-weight: 800;
+}
+
+div.contributor>img {
+    border-radius: 999999px;
+    width: 96px;
+}
+
+@media (max-width: 800px) {
+    div.contributor-list {
+        flex-direction: column;
+    }
+
+    p.header {
+        width: 100%;
+        text-align: center;
+    }
+}
